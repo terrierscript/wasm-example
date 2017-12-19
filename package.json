@@ -1,0 +1,22 @@
+{
+  "name": "wasm-sample2",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "dependencies": {
+    "assemblyscript": "^0.3.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "asc": "asc wasm/hello.ts",
+    "___asc": "asc wasm/hello.ts -b > public/hello.wasm",
+    "__asc": "asc -o public/hello.wasm -a dist/asm-hello.js  wasm/hello.ts"
+  }
+}
