@@ -7,9 +7,3 @@
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 
-
-// fetch('./hello.wasm').then(response => response.arrayBuffer()
-// ).then(bytes => {
-//   const mod = new WebAssembly.Module(bytes)
-//   const intance = new WebAssembly.Instance(module, {})
-// })
