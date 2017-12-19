@@ -36,7 +36,8 @@
         return WebAssembly.instantiate(bytes, importObject)
       }).then( r => {
         const ex = r.instance.exports
-        console.log(ex.add(2, 13))
+        const result = ex.add(2, 13)
+        document.querySelector("#root").innerHTML = result
         // console.log(r.instance.exports.fib(10))
 
         // const mod = new WebAssembly.Module(bytes)
