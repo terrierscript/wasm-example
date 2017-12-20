@@ -27,16 +27,11 @@
       ).then(bytes => {
         var importObject = {
           lib: {},
-          imports: {
-              imported_func: function(arg) {
-                console.log(arg);
-              }
-            }
-          };
+        };
         return WebAssembly.instantiate(bytes, importObject)
       }).then( r => {
         const ex = r.instance.exports
-        const result = ex.fib(1)
+        const result = ex.add(2, 3)
         document.querySelector("#root").innerHTML = result
         // console.log(r.instance.exports.fib(10))
 
