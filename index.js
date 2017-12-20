@@ -1,11 +1,9 @@
+const { load } = require("assemblyscript-loader")
 
-fetch('./public/hello.wasm')
-  .then(response => response.arrayBuffer())
-  .then(bytes => {
-    return WebAssembly.instantiate(bytes, {})
-  })
-  .then( r => {
+load('./hello.wasm')
+  .then( module => {
+    console.log(module)
     const ex = r.instance.exports
-    const result = ex.add(2, 3)
+    const result = ex.echo("foo")
     document.querySelector("body").innerHTML = result
   })
