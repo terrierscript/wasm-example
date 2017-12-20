@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <body>
-    <script>
-      fetch('./bin.wasm').then(response => response.arrayBuffer()
-      ).then(bytes => {
-        return WebAssembly.instantiate(bytes, {})
-      }).then( r => {
-        const ex = r.instance.exports
-        const result = ex.echo(3)
-        document.querySelector("#root").innerHTML = result
-      })
-    </script>
+    <script src="./index.js"></script>
     <div id="root"></div>
   </body>
 </html>
