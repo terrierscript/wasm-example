@@ -2,12 +2,12 @@
 <html lang="en">
   <body>
     <script>
-      fetch('./hello.wasm').then(response => response.arrayBuffer()
+      fetch('./bin.wasm').then(response => response.arrayBuffer()
       ).then(bytes => {
         return WebAssembly.instantiate(bytes, {})
       }).then( r => {
         const ex = r.instance.exports
-        const result = ex.add(2, 3)
+        const result = ex.echo(3)
         document.querySelector("#root").innerHTML = result
       })
     </script>
