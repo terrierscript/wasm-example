@@ -15,7 +15,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prestart": "asc wasm/hello.ts -b > public/hello.wasm",
-    "asc": "asc wasm/hello.ts  -b hello.wasm -t hello.wast -a hello.js"
+    "prestart": "asc wasm/bin.ts -b > public/bin.wasm"
   }
 }
