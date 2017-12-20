@@ -36,7 +36,7 @@
         return WebAssembly.instantiate(bytes, importObject)
       }).then( r => {
         const ex = r.instance.exports
-        const result = ex.add(2, 13)
+        const result = ex.fib(1)
         document.querySelector("#root").innerHTML = result
         // console.log(r.instance.exports.fib(10))
 
