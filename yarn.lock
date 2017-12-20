@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@types/long@^3.0.32":
+  version "3.0.32"
+  resolved "https://registry.yarnpkg.com/@types/long/-/long-3.0.32.tgz#f4e5af31e9e9b196d8e5fca8a5e2e20aa3d60b69"
+
+"@types/webassembly-js-api@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@types/webassembly-js-api/-/webassembly-js-api-0.0.1.tgz#62d50b201077d7d4cc109bb1cada22fdfd4523fb"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -237,6 +245,14 @@ asn1.js@^4.0.0:
 asn1@~0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.3.tgz#dac8787713c9966849fc8180777ebe9c1ddf3b86"
+
+assemblyscript-loader@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/assemblyscript-loader/-/assemblyscript-loader-0.3.0.tgz#f2c92f5e660d808cf8d220142158b2a41f5a70c8"
+  dependencies:
+    "@types/long" "^3.0.32"
+    "@types/webassembly-js-api" "0.0.1"
+    long "^3.2.0"
 
 assemblyscript@^0.3.0:
   version "0.3.0"
@@ -3890,6 +3906,10 @@ lodash.uniq@^4.5.0:
 loglevel@^1.4.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.0.tgz#ae0caa561111498c5ba13723d6fb631d24003934"
+
+long@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/long/-/long-3.2.0.tgz#d821b7138ca1cb581c172990ef14db200b5c474b"
 
 longest@^1.0.1:
   version "1.0.1"
