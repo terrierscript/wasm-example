@@ -13,7 +13,7 @@
     "react-dom": "^16.2.0"
   },
   "scripts": {
-    "start": "poi",
+    "start": "poi public",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
