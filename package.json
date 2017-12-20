@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "poi": "^9.6.1",
     "react-scripts": "1.0.17"
   },
   "dependencies": {
