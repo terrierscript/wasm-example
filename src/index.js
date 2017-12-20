@@ -13,6 +13,7 @@ fetch('./bin.wasm')
 
     const result = ex.echo(3)
     ex.ping()
+    console.log(ex.fib(1))
     document.querySelector("body").innerHTML = result
   }).catch(e => {
     console.warn(e)
